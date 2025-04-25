@@ -157,7 +157,7 @@ h1 {
         margin: 100px 0;
         text-align: left;
         @include border-gradient;
-        padding: 75px;
+        padding: 0px;
         border-radius: 25px;
     }
 }
@@ -487,6 +487,7 @@ h1 {
         }
 
         .wcn-top {
+            padding:75px;
             border-radius: 50px;
         }
     }
