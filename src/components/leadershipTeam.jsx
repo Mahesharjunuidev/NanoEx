@@ -21,7 +21,7 @@ export default function LeadershipTeam({ leaderShip }) {
                     <div className='col-md-12'>
                         <div className='communityCard text-start p-5'>
                             <div className='row'>
-                                <div className='col-6'>
+                                <div className='col-12 col-md-6'>
                                     <h1>{communityData.commtitle}</h1>
                                     <p>{communityData.commtest}</p>
                                     <div className='socialIcons'>
