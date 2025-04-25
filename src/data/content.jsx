@@ -232,14 +232,14 @@ const Data = {
                 BoxText: "Since 2017, over $50 billion worth of stocks, bonds, & real estate has been tokenized, proving blockchain’s growing role in finance."
             },
             {
-                Boxtitle: "$50B+",
-                BoxsubTitle: "Tokenized Assets",
-                BoxText: "Since 2017, over $50 billion worth of stocks, bonds, & real estate has been tokenized, proving blockchain’s growing role in finance."
+                Boxtitle: "$250B+",
+                BoxsubTitle: "RWA Market",
+                BoxText: "The RWA sector has surpassed $250 billion, driven by $200 billion+ in stablecoins, fueling liquidity and institutional adoption."
             },
             {
-                Boxtitle: "$50B+",
-                BoxsubTitle: "Tokenized Assets",
-                BoxText: "Since 2017, over $50 billion worth of stocks, bonds, & real estate has been tokenized, proving blockchain’s growing role in finance."
+                Boxtitle: "$30T+",
+                BoxsubTitle: "Market by 2030",
+                BoxText: "With growing government support, clear regulations, & blockchain integration, RWA annual trading volume may hit $30 trillion by 2030."
             }
 
         ]
@@ -320,27 +320,27 @@ const Data = {
 
             },
             {
-                htboxTitle: "Step1",
-                htboxSubtitle: "Sign Up & Verify",
-                htboxtext: "Create an account on NanoEx RWA, complete KYC verification, and secure your wallet for seamless and secure asset transactions."
+                htboxTitle: "Step2",
+                htboxSubtitle: "Fund Your Wallet",
+                htboxtext: "Deposit funds using crypto or fiat through our integrated fiat-to-crypto gateway, ensuring fast, convenient, and secure transactions."
 
             },
             {
-                htboxTitle: "Step1",
-                htboxSubtitle: "Sign Up & Verify",
-                htboxtext: "Create an account on NanoEx RWA, complete KYC verification, and secure your wallet for seamless and secure asset transactions."
+                htboxTitle: "Step3",
+                htboxSubtitle: "Explore & Select Assets",
+                htboxtext: "Browse tokenized real estate, commodities, collectibles, and more in our NFT marketplace with full transparency and accurate valuation insights."
 
             },
             {
-                htboxTitle: "Step1",
-                htboxSubtitle: "Sign Up & Verify",
-                htboxtext: "Create an account on NanoEx RWA, complete KYC verification, and secure your wallet for seamless and secure asset transactions."
+                htboxTitle: "Step4",
+                htboxSubtitle: "Invest & Trade",
+                htboxtext: "Purchase fractional or full ownership tokens using nRWA and trade them in a decentralized marketplace for liquidity, security, and flexibility."
 
             },
             {
-                htboxTitle: "Step1",
-                htboxSubtitle: "Sign Up & Verify",
-                htboxtext: "Create an account on NanoEx RWA, complete KYC verification, and secure your wallet for seamless and secure asset transactions."
+                htboxTitle: "Step5",
+                htboxSubtitle: "Earn & Manage Holdings",
+                htboxtext: "Stake your tokens, earn passive income, and access exclusive investment opportunities through staking rewards, governance rights, and revenue sharing."
 
             }
 
@@ -392,12 +392,12 @@ const Data = {
                     rccontent: " We comply with Nigeria’s evolving digital asset and tokenization laws, ensuring a legally sound platform."
                 },
                 {
-                    rclabel: "Regulatory Alignment",
-                    rccontent: " We comply with Nigeria’s evolving digital asset and tokenization laws, ensuring a legally sound platform."
+                    rclabel: "AML/CFT Compliance",
+                    rccontent: "We enforce Know Your Customer (KYC), Anti-Money Laundering (AML), and Counter-Terrorism Financing (CFT) policies for secure transactions."
                 },
                 {
-                    rclabel: "Regulatory Alignment",
-                    rccontent: " We comply with Nigeria’s evolving digital asset and tokenization laws, ensuring a legally sound platform."
+                    rclabel: "Data Security & Privacy",
+                    rccontent: "We follow strict cybersecurity protocols to protect user data, transactions, and financial records"
                 }
             ]
         },
