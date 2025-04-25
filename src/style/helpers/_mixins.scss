@@ -1,0 +1,232 @@
+// Browser vendor prefix for common
+@mixin crossBrowser($property, $val) {
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}
+
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+        -ms-flex: $values;
+            flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+     -moz-box-ordinal-group: $val;     
+             -ms-flex-order: $val;     
+              -webkit-order: $val;  
+                      order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number> 
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width> 
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around 
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch 
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch 
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+          align-items: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch 
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+          align-self: $align;
+}
+
+
+//Media query break points
+@mixin breakpoint($point) {
+  @if $point == xs {
+      @media (min-width: 0) { @content ; }
+  }
+  @else if $point == sm {
+      @media (min-width: 576px) { @content ; }
+  }
+  @else if $point == md {
+      @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == lg {
+      @media (min-width: 992px)  { @content ; }
+  }
+  @else if $point == xl {
+      @media (min-width: 1200px)  { @content ; }
+  }
+  @else if $point == xxl {
+      @media (min-width: 1600px)  { @content ; }
+  }
+}
+
+@mixin minWidth_B_radius() {
+  min-width: 60px;
+  border-radius: 6px;
+}
+
+
+@mixin scroll-gradient{
+  &::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+&::-webkit-scrollbar-track {
+    background: #252E29;
+    border-radius: 20px;
+}
+
+/* Handle */
+&::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(265deg, #56C690, #F4CE14);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+}
+
+@mixin border-gradient(){
+
+  position: relative;
+  padding: 16px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: 
+    linear-gradient($black,$black) padding-box,  /* Inner background */
+    linear-gradient(to right, #fff, #56C690) border-box;  /* Border gradient */
+}
+
+@mixin textGradient(){
+  background: linear-gradient(135deg, #FFFFFF, #56C690);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+@mixin color_transition($f_color, $trans) {
+  color: $f_color;
+  transition: $trans;
+}
+
+@mixin flex_property($flex-direction, $align, $justify) {
+  display: flex;
+  @if $flex-direction != null {
+    flex-direction: $flex-direction;
+  }
+  @if $align != null {
+    align-items: $align;
+  }
+  @if $justify != null {
+    justify-content: $justify;
+  }
+}

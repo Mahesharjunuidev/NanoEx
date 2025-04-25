@@ -1,0 +1,28 @@
+.Banner {
+    h2 {
+        font-size: 15px;
+        line-height: 2rem;
+    }
+
+    .how-to-buy {
+        background: #262626;
+    }
+
+    color: $white;
+    background: $primary;
+    padding: 120px 0;
+    background: url('../assets/banner-background.png') no-repeat center / cover;
+
+}
+
+@include breakpoint(md) {
+    .Banner {
+        h2 {
+            font-size: 45px;
+            line-height: 5rem;
+
+        }
+
+    }
+
+}

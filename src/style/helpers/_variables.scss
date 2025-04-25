@@ -1,0 +1,178 @@
+//Bootstrap customized theme - Reset varible values
+// scss-docs-start theme-color-variables
+$primary: #56C690;
+$secondary: #F4CE14;
+$bg-primary:$primary;
+$black:#000;
+// scss-docs-end theme-color-variables
+
+// Optional: define gradient using primary
+$primary-gradient: linear-gradient(135deg, lighten($primary, 10%), darken($secondary, 5%));
+
+// Override Bootstrap's primary button styles
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg: #F6F6F6;
+$body-color:#131313;
+$border: #E5E5E5;
+$white:#ffffff;
+$black:#000000;
+$field-border:#D9D8D8;
+$gray:#8A8A8A;
+$filter-font:#6F6F6F;
+$green:#129B23;
+$link:#2C7BD9;
+$red:#FF0000;
+// Links
+//
+// Style anchor elements.
+
+$link-color: #5A5A5A;
+$link-decoration: none;
+
+// scss-docs-start border-radius-variables
+$border-radius:               .5rem;
+$border-radius-lg:            .3rem;
+$border-radius-pill:          50rem;
+$btn-border-radius:           $border-radius;
+$dropdown-border-radius:      .3rem;
+$border-width:                  1px;
+// scss-docs-end border-radius-variables
+
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-base: 1.4rem; // Assumes the browser default, typically `16px`
+$font-size-lg: 1.6rem;
+$font-size-sm: 1.3rem;
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$form-check-input-width: 1.3em !default;
+$font-weight-base: $font-weight-normal;
+$border-width:2px !default;
+
+
+
+
+
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$inputbg: #F1F5F8;
+$form-label:rgba($body-color, .8);
+$input-border-radius: $border-radius-lg;        
+$modal-border-radius:$border-radius;
+$input-font-size-sm: $font-size-base;
+$input-font-size:1.4rem;
+$input-font-weight: $font-weight-base;
+$btn-font-size:  1.2rem;  
+$outline-btn:#C9C9C9;
+$input-font-family:$font-family-sans-serif;
+$form-select-font-size:1.2rem;
+$form-select-padding-y:0.5rem;
+$pagination-border-width:0px;
+$pagination-color:$filter-font;
+//Typography
+
+$table-striped-bg:$white;
+$table-sort:#8D97A3;
+$table-bg:#F6F7F8;
+
+//accordian 
+$accordion-border-radius: $border-radius !default;
+
+
+
+// scss-docs-start headings-variables
+$headings-font-weight:   $font-weight-semibold;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1130px,
+  xxl: 1460px
+);
+
+
+$border-color: $border;
+
+// scss-docs-end border-variables
+
+$btn-secondary:$gray; 
+
+// scss-docs-start form-select-variables
+$form-select-border-color:$field-border;
+$form-select-border-width:1px;
+$form-select-color:$body-color;
+$form-select-bg:$white;
+$form-select-border-radius:$border-radius-lg;
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0px 0px 5px 0px rgba($black, 0.75);
+$box-shadow-sm:               0px 0px 5px 0px rgba($black, 0.75);
+$box-shadow-lg:               0px 0px 5px 0px rgba($black, 0.75);
+$box-shadow-inset:            inset 0px 0px 5px 0px rgba($black, 0.75);
+// scss-docs-end box-shadow-variables
+
+
+$h1-font-size:                3.5rem;
+$h2-font-size:                3rem;
+$h3-font-size:                2.5rem;
+$h4-font-size:                2rem;
+$h5-font-size:                1.6rem;
+$h6-font-size:                1.4rem;
+
+// Cards
+
+// scss-docs-start card-variables
+$card-cap-bg:                       #EEECEC;
+$card-spacer-y:                    1.2rem;
+$card-spacer-x:                    1.2rem;  
+$card-border-width:                0;
+$card-border-color:                none;
+$card-border-radius:               0px;
+$card-box-shadow:                  0px 0px 5px rgba(#8E8E8E, 0.2);
+$card-bg:                          $white;
+$card-cap-padding-y:               1.4rem;
+$card-cap-padding-x:               1.4rem;
+$card-border-width:                1px;
+$card-border-color:                $border;
+
+
+// scss-docs-end card-variables
+
+
+
+
+
+
+
+
+
+
+
+

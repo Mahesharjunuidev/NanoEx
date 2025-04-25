@@ -1,0 +1,546 @@
+h1,
+h2,
+h5 {
+    color: $white;
+}
+
+p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+h1 {
+    @include textGradient();
+    font-size: 35px;
+    font-weight: $font-weight-semibold;
+
+}
+
+.icon-box {
+    padding: 1rem 0;
+
+    .custom-columns {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+
+        .card {
+            &.grad-card {
+                border-radius: 18px;
+                min-height: 368px;
+
+                h3 {
+                    font-size: 23.30px;
+                    font-weight: $font-weight-bold;
+                }
+
+                p {
+                    color: $black;
+                }
+
+                img {
+                    width: 87px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-image: linear-gradient(314deg, #56C690, #F4CE14);
+
+                    h3,
+                    p {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.scrollContent {
+    margin: 100px 0px;
+    .scrollSection {
+        margin-top: 50px;
+
+        h5 {
+            font-size: 30px;
+            font-weight: $font-weight-bold;
+        }
+
+        max-height: 100%;
+        overflow: auto;
+
+        @include scroll-gradient;
+    }
+}
+
+.tokenization {
+    padding: 100px 0;
+
+    .toke-box {
+        .gradient-border {
+            @include border-gradient;
+        }
+
+    }
+}
+
+.htWorks {
+    padding: 50px 0;
+    background: url('../assets/how-it-works.jpg') no-repeat center / cover;
+
+}
+
+.Reg-comp {
+    strong{
+        color: $primary;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: $font-weight-bold;
+        line-height: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul {
+        @include scroll-gradient;
+
+        position: relative;
+        list-style-type: none;
+        overflow: auto;
+        max-height: 100%;
+
+        &.rhslist {
+            min-height: 100%;
+            overflow: inherit;
+
+            li {
+                padding-bottom: 0px;
+
+                &:before {
+                    margin-top: 6px;
+
+                }
+            }
+
+        }
+
+        li {
+            list-style-type: none;
+            line-height: 25.78px;
+            font-size: 17.58px;
+            padding-bottom: 16px;
+
+            &:before {
+                content: '';
+                margin-top: 3px;
+                position: absolute;
+                left: 0px;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-image: linear-gradient(265deg, $primary, $white);
+            }
+        }
+    }
+}
+
+.whychoose-nano {
+    h1 {
+        font-size: 35px;
+    }
+
+    .wcn-top {
+        padding: 50px;
+        margin: 100px 0;
+        text-align: left;
+        @include border-gradient;
+        padding: 75px;
+        border-radius: 25px;
+    }
+}
+
+.htworkBox {
+    margin-bottom: 30px;
+    @include border-gradient;
+    border-radius: 20px;
+
+    p {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    h4 {
+        color: $primary;
+        font-weight: $font-weight-bold;
+    }
+
+    .border-right {
+        border-right: none;
+    }
+
+}
+
+.investorSection {
+    background: url('../assets/invest-background.png') no-repeat center / cover;
+
+    padding: 50px 0;
+
+    .invest-box {
+        border: 1px solid $white;
+        padding: 20px;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        backdrop-filter: blur(12px);
+        background: #ffffff1f;
+
+        h5 {
+            font-size: 30px;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.card {
+    &.carosuel-card {
+        padding: 0px;
+        background-image: linear-gradient(7deg, $primary, $white);
+        padding: 0px;
+        border-radius: 26px;
+        margin-bottom: 40px;
+
+        .card-body {
+            position: relative;
+            min-height: 400px;
+            padding: 10px;
+            border: 1px solid transparent;
+            background: linear-gradient($black, $black) padding-box,
+                /* Inner background */
+                linear-gradient(to right, $secondary, $primary) border-box;
+
+            >div {
+                border-radius: 26px;
+                background-image: linear-gradient(7deg, #000, #56c6906e);
+
+            }
+
+            border-radius: 26px;
+
+            h5 {
+                font-size: 23.32px;
+                font-weight: 700;
+                line-height: 33.14px;
+                margin-bottom: 20px;
+            }
+
+            /* Border gradient */
+        }
+    }
+}
+
+.communityCard {
+
+    background: url('../assets/mobile-social-background.png') no-repeat center / cover;
+    border-radius: 20px;
+    margin: 100px 0;
+
+    .socialIcons {
+        img {
+            padding: 0px 10px;
+        }
+    }
+}
+
+.leadeship,
+.AssetToken {
+    .lhstitle {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .lhstext {
+
+        font-size: 15px !important;
+        line-height: 30px !important;
+    }
+
+    .rhstitle {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .react-multi-carousel-dot button {
+        background: #575757;
+        height: 19px;
+        width: 24px;
+        border-radius: 18.41px;
+    }
+
+    .react-multi-carousel-dot--active button {
+        height: 19px;
+        width: 84px;
+        border-radius: 10px;
+        background-image: linear-gradient(45deg, $white, $primary);
+    }
+}
+
+.key-feature {
+    background: url('../assets/key-feature.png') no-repeat center / cover;
+
+    .feature-box {
+        .gradient-bac {
+            @include border-gradient;
+
+            &:hover {
+                background-image: linear-gradient(180deg, $primary, #74620B);
+            }
+        }
+    }
+}
+
+.intercomp {
+    ul {
+        padding-left: 0px;
+        margin-top: 15px;
+
+        .gradient-border {
+            @include border-gradient;
+        }
+
+        li {
+            list-style-type: none;
+            text-align: left;
+            color: $white;
+            font-size: 23.32px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+        font-weight: 700;
+        height: 41px;
+        display: flex;
+        border-radius: 11px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(180deg, $primary, $white);
+    }
+}
+
+.faq {
+    margin-top: 50px;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .accordion {
+
+        .accordion-item,
+        .accordion-button {
+            &:focus {
+                box-shadow: none;
+            }
+
+            color: $white;
+            text-align: left;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid $white;
+            background: transparent;
+
+            &:not(.collapsed) {
+                &::after {
+                    background: url('../assets/icons/collapse.png') no-repeat center;
+                    background-size: 14px;
+
+                }
+            }
+
+            &::after {
+                background: url('../assets/icons/expand.png') no-repeat center;
+                background-size: 14px;
+            }
+
+        }
+    }
+}
+
+.footer {
+    .backtop {
+        img {
+            position: fixed;
+            width: 76px;
+            bottom: 20px;
+            /* distance from bottom */
+            right: 20px;
+            /* distance from right */
+            z-index: 1000;
+            padding: 10px 14px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+    }
+
+    ul {
+        >p {
+            font-weight: $font-weight-lighter;
+        }
+    }
+
+    .copyright {
+        span {
+            @include textGradient();
+            font-weight: $font-weight-bold;
+            font-size: 16px;
+
+        }
+    }
+
+    border-top: 1px solid $white;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(180deg, #56c69070, #000000);
+
+    ul li {
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
+        list-style-type: none;
+        padding:0px 20px;
+        border-right: 1px solid $white;
+        display: inline-block;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .card {
+        &.carosuel-card {
+
+            margin-bottom: 40px;
+        }
+    }
+
+    .scrollContent {
+        .scrollSection {
+            max-height: 400px;
+        }
+    }
+
+    .icon-box {
+        padding: 200px 0;
+        .custom-columns {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    .investorSection {
+
+        padding: 200px 0;
+
+    }
+
+    .leadeship,
+    .AssetToken {
+        .lhstitle {
+            font-size: 60px;
+            line-height: 90px;
+
+        }
+
+        .rhstitle {
+            font-size: 50px;
+            line-height: 90px;
+        }
+    }
+
+    .whychoose-nano {
+        h1 {
+            font-size: 70px;
+        }
+
+        .wcn-top {
+            border-radius: 50px;
+        }
+    }
+
+    .card {
+        &.carosuel-card {
+            margin-bottom: 70px;
+        }
+    }
+
+    .intercomp {
+        h2 {
+            font-size: 35px;
+            height: 73px;
+            border-radius: 18.41px;
+
+        }
+    }
+
+    .htWorks {
+        padding: 100px 0;
+    }
+
+    .Reg-comp {
+        h2 {
+            font-size: 40px;
+            line-height: 61px;
+            text-align: left;
+        }
+
+        ul {
+            max-height: 286px;
+
+
+        }
+
+    }
+
+
+    .communityCard {
+
+        background: url('../assets/social-icon-banner.png') no-repeat center / cover;
+
+    }
+
+    .htworkBox {
+        .border-right {
+            border-right: 1px solid $primary;
+        }
+    }
+    .faq {
+    
+        h1 {
+            font-size: 70px;
+        }
+    }
+}
